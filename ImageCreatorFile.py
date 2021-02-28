@@ -6,7 +6,7 @@ from PIL.ImageFilter import (
 import os
 
 cwd = os.getcwd()
-image = Image.open('aging-man.jpg')
+image = Image.open('image.jpg')
 image = image.filter(SHARPEN)
 enhancer = ImageEnhance.Brightness(image)
 image = enhancer.enhance(1.2)
